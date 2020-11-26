@@ -1,0 +1,437 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(252,252,252);
+}
+
+/* HEADER */
+#header{
+    background-color: #F0F1F3;
+    background-size: 100vw;
+    padding: 15px 15% 15px 15%;
+}
+
+#nav{
+    background-color: #F0F1F3;
+    color: #77AFDF;
+    padding: 0 15% 20px 15%;
+}
+
+#nav ul, #nav li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#nav li:after{
+    content: '|';
+    margin: 0 10px;
+}
+
+#nav li:last-child:after{
+    display: none;
+}
+
+#nav ul li.active{
+    text-decoration: underline; 
+}
+
+#nav a{
+    font-size: initial;
+    text-decoration: none;
+    color: #77AFDF;
+}
+
+#nav a:hover{
+    color: #a01127;
+    text-decoration: underline;
+}
+
+/* GENERAL */
+a{
+    color: #77AFDF;
+    text-decoration-style: dashed ;
+}
+
+a:hover{
+    color:#a01127; 
+    text-decoration: none;
+}
+
+main {
+    padding: 0 15% 0 15%; 
+}
+
+#special{
+    background-color: gainsboro;
+    display: inline-flex;
+}
+
+h1{
+    color: #A01127;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+h3{
+    color: #77AFDF;
+    margin: 0 0 5px 0;
+}
+
+h2{
+    font-size: 1.4rem;
+    border-bottom: 1px #a01127 solid;
+    color: #A01127;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+h4{
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+h4 + p{
+    margin:0;
+    padding-right: 28%;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+h3 + p{
+    margin:0;
+    padding: 0 0 10px 0; 
+}
+
+/* FOOTER */
+#footer{
+    margin: 0;
+    background-size: 100vw;
+    padding: 5px 15% 5px 15%;
+    background-color:#BBB;
+    color: white;
+}
+
+#footer p{
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    color: #a01127;
+    text-decoration: underline;
+}
+
+#footer ul{
+    padding: 0;
+}
+
+#footer li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#footer li:last-child{
+    padding-left: 10px;
+}
+
+
+/* ARTICLE 
+article{
+    font-size: small;
+} */
+
+article section{
+    padding: 0;
+    margin: 0;
+}
+
+
+article section ol > li{
+    padding-bottom: 10px;
+}
+
+article section ol > li:last-child{
+    padding-bottom: 20px;
+}
+
+.red li::first-letter{
+    color: #A01127;
+    font-weight: bold;
+}
+
+article section ol > li > ul > li{
+    list-style: square;
+}
+
+.video{
+    margin-left: 12%;
+    margin-right: 5%;
+    padding-bottom: 3rem;
+}
+
+.video iframe{
+    margin-left: 5%;
+}
+
+.video p{
+    padding-right: 40%;
+}
+
+#foot{
+    margin-top: 50px;
+    font-size: small;
+}
+
+#foot a{
+    color: #A01127;
+}
+
+/* TABLE */
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;   
+}
+
+thead th{
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 1px solid black;
+}
+
+caption{
+    caption-side: bottom;
+    text-align: right;
+    font-style: italic;
+}
+
+
+/* TABLE 1 */
+
+#tbl1 thead th:nth-child(1){
+    width: 20%;
+ }
+
+#tbl1 thead th:nth-child(3){
+   width: 20%;
+}
+
+#tbl1 thead th:nth-child(2){
+    width: 60%;
+}
+
+#tbl1 tbody th, tbody td{
+    text-align: left;
+    vertical-align: middle;
+    padding: 1% 2% 0.5% 0.5%;
+}
+
+#tbl1 tbody th a {
+    color: inherit;
+}
+
+#tbl1 tbody tr:nth-child(odd){
+    background-color:rgba(119, 175, 223,0.2)
+}
+
+#tbl1 tbody tr:nth-child(even){
+    background-color:rgba(119, 175, 223,0.4)
+}
+
+
+/* TABLE 2 */
+
+#tbl2 thead th:nth-child(1){
+    width: 15%;
+ }
+
+#tbl2 thead th:nth-child(2){
+    width: 85%;
+}
+
+#tbl2 tbody th, tbody td{
+    text-align: left;
+    vertical-align: middle;
+    padding: 1% 2% 1.5% 0.5%;
+}
+
+#tbl2 tbody th a {
+    color: inherit;
+}
+
+#tbl2 tbody tr:nth-child(1), #tbl2 tbody tr:nth-child(2){
+    background-color:rgba(119, 175, 223,0.2)
+}
+
+#tbl2 tbody tr:nth-child(3), #tbl2 tbody tr:nth-child(4){
+    background-color:rgba(119, 175, 223,0.4)
+}
+
+#tbl2 tbody tr:nth-child(5){
+    background-color:rgba(119, 175, 223,0.2)
+}
+
+/* FORM */
+
+form {
+    font-size: small;
+}
+
+form ul {
+    list-style: none;
+}
+
+form li.stacked{
+    margin-right: 5%;
+    display: inline-block;
+    padding-bottom: 1rem;
+    font-size: 16px;
+    width: 20%;
+}
+
+li.stacked input, li.stacked label {
+    display: block;
+}
+
+li.stacked input{
+    margin-top: 0.5rem;
+    padding: 2%;
+}
+
+li.stacked select{
+    margin-top: 0.5rem;
+    padding: 2%;
+    width: 100%;
+}
+
+li.stacked input{
+    width: 245px;
+}
+
+.checkbox li{
+    padding-bottom: 0.5rem;
+}
+
+.checkbox li li:first-child {
+   padding-top: 2%;
+}
+
+.required::after {
+    content: '*';
+    font-weight: bold;
+    margin-left: 0.2rem;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+fieldset{
+    margin-top: 1.5rem;
+}
+
+button{
+    background-color: #A01127;
+    border-radius: 18px;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1% 2%;
+    text-align: center;
+    border:none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[typbe="checkbox"] {
+    line-height: 5rem;
+}
+
+/* INDEX */
+
+.index {
+    margin: 0;
+    background: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    /*background-size:  100vw;*/
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#headerIndex {
+    padding: 10% 20% 0 20%;
+    text-align: center;
+    margin: 0;
+}
+
+#headerIndex img {
+    width: 45%;
+    height: 45%;
+}
+
+#navIndex{
+    margin: 0;
+    text-align: center;
+    padding: 0 15% 20px 15%;
+}
+
+#navIndex ul {
+    margin:0;
+    padding: 1% 0 0 0;
+    list-style: none;
+}
+
+#navIndex li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#navIndex li:after{
+    content: '|';
+    margin: 0 10px;
+    color: #77AFDF;
+}
+
+#navIndex li:last-child:after{
+    display: none;
+}
+
+#navIndex a{
+    font-size: initial;
+    text-decoration: none;
+    color: #77AFDF;
+}
+
+#footerIndex {
+    margin: 10% 0 10% 0;
+    color:white;
+    text-align: center;
+}
+
+#footerIndex p{
+    margin: 0;
+    line-height: normal;
+}
+
+#footerIndex a {
+    color: #A01127;
+}

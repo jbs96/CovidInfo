@@ -1,0 +1,184 @@
+<!DOCTYPE html >
+<html lang="ca">
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Salut/Dades Covid</title>
+        <meta name="description" content="L'objectiu del web és facilitar de forma pública i transparent el seguiment epidemiològic de la pandèmia de la COVID-19" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="header">
+            <a href="./index.html"><img src="./img/infocovid.svg" alt="logo info covid"></a>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="./mesures_benestar.html">Mesures de benestar</a></li>
+                <li><a href="./web_salut.html">Les dades</a></li>
+                <li class="active"><a href="./certificat.html">Certificat autoresponsable</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form>
+                <h1>Certificat autoresponsable de desplaçament per la crisi sanitària per la COVID-19</h1>
+                <p id="special">Esl camps assenyalats amb * són obligatoris.</p>
+                <fieldset>
+                    <legend>Dades Personals</legend>
+                    <ul>
+                        <li class="stacked">
+                            <label for="nom" class="required">Nom</label>
+                            <input type="text" id="nom" name="name" minlength="2" maxlength="64" required>
+                        </li>
+                        <li class="stacked">
+                            <label for="cognom1" class="required">Primer Cognom</label>
+                            <input type="text" id="cognom1" name="1rCognom" minlength="2" maxlength="128" required>
+                        </li>
+                        <li class="stacked">
+                            <label for="cognom2" class="required">Segon Cognom</label>
+                            <input type="text" id="cognom2" name="2nCognom" minlength="2" maxlength="128" required>
+                        </li>
+                        <li class="stacked">
+                            <label for="id" class="required">Documentació d'identificació</label>
+                            <select id="id" name="identification" required>
+                                <option value="dni">DNI/NIF</option>
+                                <option value="nie">NIE</option>
+                                <option value="passsport">Passaport</option>
+                            </select>
+                        </li>
+                        <li class="stacked">
+                            <label for="idnumber" hidden></label>
+                            <input type="text" id="idnumber" name="idNumber" required>
+                        </li>
+                    </ul>
+                </fieldset>
+                <section>
+                    <fieldset>
+                        <legend>Trajecte</legend>
+                        <ul>
+                            <li class="stacked">
+                                <label for="data" class="required">Data del desplaçament</label>
+                                <input type="date" id="data" name="dataDesplaçament" placeholder="dd/mm/aaaa" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required>
+                                <span class="validity"></span>
+                            </li>
+                        </ul>
+                        <ul class="checkbox">
+                            <li>
+                                Certifico que el meu desplaçament està relacionat amb l'activitat especificada a continuació (marqueu la casella)
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Adquisició d'aliments, productes farmacèutics i de primera necessitat.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Assistència a centre, servei o establiment sanitari.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Desplaçament al lloc de treball per efectuar la prestació laboral, professional o
+                                    empresarial.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Retorn al lloc de residència habitual.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Assistència o atenció a persones grans, menors d'edat, dependents, persones
+                                    amb discapacitat o persones especialment vulnerables.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Desplaçament a entitat financera o d'assegurança.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Causa de força major o situació de necessitat.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="recollida" name="menors" value="recollida">
+                                <label for="recollida">Sortida d'infants i adolescents.</label>
+                                <ul>
+                                    <li>Nombre de menors:</li>
+                                    <li><input type="radio" id="1m" name="numM" value="1"><label for="1m">1</label></li>
+                                    <li><input type="radio" id="2m" name="numM" value="2"><label for="2m">2</label></li>
+                                    <li><input type="radio" id="3m" name="numM" value="3"><label for="3m">3</label></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Sortida passejos majors de 70 anys i dependents.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="" value="">
+                                <label for="">Sortida activitat física i passeig a partir de 14 anys</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend>Adreça d'origen</legend>
+                        <ul>
+                            <li class="stacked">
+                                <label for="ogpo" class="required">Codi Postal</label>
+                                <input type="number" id="ogpo" name="codipostalog" minlength="5" maxlength="5" required>
+                            </li>
+                            <li class="stacked">
+                                <label for="ogprovincia" class="required">Província</label>
+                                <input type="text" id="ogprovincia" name="provinciaog" required>
+                            </li>
+                            <li class="stacked">
+                                <label for="ogcomarca" class="required">Comarca</label>
+                                <input type="text" id="ogcomarca" name="comarcaog" required>
+                            </li>
+                            <li class="stacked">
+                                <label for="ogmunicipi" class="required">Municipi</label>
+                                <input type="text" id="ogmunicipi" name="municipiog" required>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend>Adreça de destinació</legend>
+                        <ul>
+                            <li class="stacked">
+                                <label for="dtpo" class="required">Codi Postal</label>
+                                <input type="number" id="dtpo" name="codipostaldt" minlength="5" maxlength="5" required>
+                            </li>
+                            <li class="stacked">
+                                <label for="dtprovincia" class="required">Província</label>
+                                <input type="text" id="dtprovincia" name="provinciadt" required>
+                            </li>
+                            <li class="stacked">
+                                <label for="dtcomarca" class="required">Comarca</label>
+                                <input type="text" id="dtcomarca" name="comarcadt" required>
+                            </li>
+                            <li class="stacked">
+                                <label for="dtmunicipi" class="required">Municipi</label>
+                                <input type="text" id="dtmunicipi" name="municipidt" required>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+                <h4>Informació bàsica relativa a la protecció de dades</h4>
+                    <p>L’informem que les dades recollides seran tractades per la Direcció General d’Administració Digital, del Departament de Polítiques Digitals i Administració Pública
+                        de la Generalitat de Catalunya, per tal de donar-li suport en l’elaboració de la declaració autoresponsable. Podrà exercir els drets d’accés, rectificació, supressió,
+                        oposició al tractament i sol·licitud de limitació de les dades mitjançant el següent enllaç: <a href="http://politiquesdigitals.gencat.cat/ca/pgov_departament/proteccio-de-dades/drets-de-les-persones-interessades/">
+                        http://politiquesdigitals.gencat.cat/ca/pgov_departament/proteccio-de-dades/drets-de-les-persones-interessades/</a></p>
+                <p><button type="submit">Generar certificat</button></p>
+            </form>
+            <p id="foot">Font: <a href="https://certificatdes.confinapp.cat/">Certificat autoresponsable de desplaçament per la crisi sanitària per la COVID-19</a></p>
+        </main>
+        <footer id="footer">
+            <p>2020 © Jordi Bellés Solà</p>
+            <ul>
+                <li><a href="">Avís Legal</a></li>  
+                <li><a href="">Política de privacitat</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

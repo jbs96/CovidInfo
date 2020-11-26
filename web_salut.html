@@ -1,0 +1,196 @@
+<!DOCTYPE html >
+<html lang="ca">
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Salut/Dades Covid</title>
+        <meta name="description" content="L'objectiu del web és facilitar de forma pública i transparent el seguiment epidemiològic de la pandèmia de la COVID-19" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="header">
+            <a href="./index.html"><img src="./img/infocovid.svg" alt="logo info covid"></a>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="./mesures_benestar.html">Mesures de benestar</a></li>
+                <li class="active"><a href="./web_salut.html">Les dades</a></li>
+                <li><a href="./certificat.html">Certificat autoresponsable</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h1>El web Salut/Dades Covid</h1>
+                <p>L'objectiu del web és facilitar de forma pública i transparent el seguiment epidemiològic
+                    de la pandèmia de la COVID-19 mitjançant la monitorització dels indicadors clau
+                    definits en el pla de control de la transmissió de la COVID-19 a Catalunya.
+                </p>
+                <section>
+                    <h2>Justificació de conceptes clau</h2>
+                    <p>
+                        A continuació explicarem 4 conceptes que fem servir en tots els indicadors i
+                        justificarem el perquè.
+                    </p>
+                    <h3>Usem els casos COVID-19 confirmats per <abbr title="polymerase chain reaction" lang="en">PCR</abbr>/<abbr title="Test d'Antígens">TA</abbr> per al seguiment epidemiològic</h3>
+                    <p>
+                        Primer de tot, els casos de COVID-19 confirmats per fer un seguiment epidemiològic
+                        són exclusivament els confirmats per PCR/TA, ja que la PCR/TA+ ens indica que és un
+                        cas actiu i pel seguiment epidemiològic és important la data en què s’inicia el cas.
+                    </p>
+                    <h3>No usem els casos COVID-19 confirmats per testos ràpids serològics o per <abbr title="Enzyme-Linked ImmunoSorbent Assay" lang="en">ELISA</abbr></h3>
+                    <p>En segon lloc, i com a conseqüència del primer, no usarem per al seguiment
+                        epidemiològic els tests serològics ni les proves ELISA que s’han fet per als estudis de
+                        seroprevalença, perquè la informació que ens donen és l’estat immunològic de la
+                        persona, però es desconeix en quina data aquell cas va ser actiu. No es poden imputar
+                        aquestes proves a la data de realització ja que ens donarien una falsa sensació
+                        d’augment de casos quan és el contrari, són persones ja immunitzades i que han estat
+                        casos en el passat.</p>
+                    <h3>Hem de diferenciar el seguiment segons si la població és general o
+                        de residència</h3>
+                    <p>I en tercer lloc és important diferenciar dues poblacions, la general i la de residències,
+                        ja que el seu comportament epidemiològic és totalment diferent, com es va poder
+                        veure en la primera onada. Per una banda, la població general viu en la comunitat i es
+                        relaciona i mou d’una determinada manera; les persones ingressades en residències
+                        geriàtriques, viuen en comunitats molt tancades i en llocs molt tancats i la seva
+                        mobilitat és molt reduïda. Donades aquestes característiques, no es pot fer el
+                        seguiment epidemiològic conjunt de les dues poblacions i és per això que a la web
+                        presentem les dades separades.</p>
+                    <h3>On imputem la data del cas?</h3>
+                    <p>A diferència d'altres fonts, i per motius epidemiològics, imputem l'inici del cas en funció
+                        de la data més antiga que disposem ja sigui del diagnóstic de COVID19 de l'Atenció
+                        Primària (si hi és) o de la realització de la PCR/TA+, ja que aquestes dues dates ens
+                        indiquen l'inici del cas. Veure la definició de cas confirmat per PCR/TA per més detalls.</p>
+                </section>
+                <section>
+                    <h2>Característiques del web</h2>
+                    <p>L'origen de les dades sobre el seguiment epidemiològic de la COVID-19 a Catalunya
+                        és divers i canviant, fent-lo un sistema complexe de sistematitzar i interpretar. Aquest
+                        document pretén, per una banda, descriure les fonts de dades, però també per una
+                        altra, explicar i ajudar a interpretar les dades i les seves peculiaritats.</p>
+                        <h3>Fonts de dades</h3>
+                        <p>De cadascuna de les dades i indicadors que trobareu a la web, us especificarem les
+                            fonts de dades. Aquí us posem un llistat de totes les fonts de dades que s’estan usant.</p>
+                        <table id="tbl1">
+                            <caption>Llistat de les fonts de dades a la web</caption>
+                            <thead>
+                                <tr>
+                                    <th>Font</th>
+                                    <th>Descripció</th>
+                                    <th>Dades que aporta</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>ECAP (Estació Clínica de l’Atenció Primària)</th>
+                                    <td>És la plataforma de la història
+                                        clínica de l’Atenció Primària de
+                                        Catalunya. Utilitza els
+                                        diagnòstics codificats amb
+                                        CIM10-MC i les variables
+                                        pròpies.
+                                    </td>
+                                    <td> Malalties respiratòries agudes-Població de residència</td>
+                                </tr>
+                                <tr>
+                                    <th>Històric de cens hospitalari</th>
+                                    <td>Ingressos a hospitals de Catalunya, només disponible des del 29/04/2020</td>
+                                    <td>Ingressos i ingressats - Ingressos i ingressats a UCI</td>
+                                </tr>
+                                <tr>
+                                    <th>Registre Sanitari Agregat (RSA) de Salut</th>
+                                    <td>Registre centralitzat de PCR/TA del sistema púbil de Salut</td>
+                                    <td>PCR-Defuncions</td>
+                                </tr>
+                                <tr>
+                                    <th>Orfeu</th>
+                                    <td>Programa per al registre de PCR/TA, que inicialment es va fer servir per sol·licitar i enregistrar les PCR/TA dels professionals sanitaris i dels cribatges de residenències </td>
+                                    <td>PCR</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="https://catsalut.gencat.cat/ca/proveidors-professionals/registres-catalegs/registres/central-poblacio/">Registre central d'assefurats del CatsSalut</a></th>
+                                    <td>Registre d'assignacions de les persones als seus equips d'atenció primària.</td>
+                                    <td>Població - Edat - Gènere - Territori</td>
+                                </tr>
+                                <tr>
+                                    <th>Aplicatiu pilot cens de residències</th>
+                                    <td>Aplicatiu on hi ha el censt actualitzat de persones en redisències geriàtriques, de moment en fase pilot només en alguns centres</td>
+                                    <td>Població de residència</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                        <p>Totes dades han passat per un <strong>procés d’anonimització</strong> i que per evitar riscos de
+                            reidentificació algunes dades s’han generalitzat (l'edat s'ha agregat en grups d'edat) o
+                            eliminat (defuncions en territoris que no garantien la confidencialitat de les dades
+                            sensibles) en aplicacions tècniques d’anonimització .</p>
+                        <h3>Data d'inici</h3>
+                        <p>La recollida de dades s'inicia l'<time datetime="2020-03-01">01/03/2020</time></p>
+                        <h3>Data actualizació</h3>
+                        <p>Les dades es publiquen al web cada dia al voltant de les 10:00, però sha de tenir en compte el següent:</p>
+                        <ul>
+                            <li>Només es mostren les dades fins a 3 dies abans. El motiu és s'explica en l'apartat següent.</li>
+                            <li>Tot i que la publicació és a les 10:00, les dades s'actualitzen a les 20h del dia anterior.</li>
+                        </ul>
+                </section>
+                <section>
+                    <h2>Les dades són dinàmiques</h2>
+                    <p>Donada la peculiaritat de la situació, les dades poden variar d’un dia a l’altre. És a dir,
+                        si mirem una dada avui és X, però si la mirem 24 hores després, pot ser X+3. El motiu
+                        de la variació és diferent segons la dada.</p>
+                    <p>Aquí us presentem el llistat, però us ho explicarem en detall en el glossari de cada concepte.</p>
+
+                    <table id="tbl2">
+                        <thead>
+                            <tr>
+                                <th>Paràmetre</th>
+                                <th>Motiu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2">PCR/TA</th>
+                                <td>Quan un professional sanitari demana una PCR/TA, aquesta triga en arribar un
+                                    temps variable que pot ser hores o dies. La web va incorporant les PCR/TA a
+                                    mesura que es van rebent els resultats i aquest s’imputa al dia que es va realitzar
+                                    la prova. Per això el nombre de PCR/TA pot augmentar de forma retrospectiva.</td>
+                            </tr>
+                            <tr>
+                                <td>Quan un professional sanitari demana una PCR/TA, aquesta triga en arribar un
+                                    temps variable que pot ser hores o dies. La web va incorporant les PCR/TA a
+                                    mesura que es van rebent els resultats i aquest s’imputa al dia que es va realitzar
+                                    la prova. Per això el nombre de PCR/TA pot augmentar de forma retrospectiva.</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">Infeccions respiratòries agudes</th>
+                                <td>A l’hora de fer el diagnòstic a la història clínica, es pot especificar quin és el dia
+                                    d’inici de la malaltia, que pot ser anterior al dia de l’assistència. És per això que hi
+                                    pot haver increments del nombre de diagnòstics amb posterioritat a la data.</td>
+                            </tr>
+                            <tr>
+                                <td>També pot passar que, després de rebre els resultats d’una prova, es modifiqui el
+                                    diagnòstic d’infecció respiratòria aguda per un altre. En aquest cas, el nombre
+                                    d’infeccions respiratòries agudes de la web disminuiria.</td>
+                            </tr>
+                            <tr>
+                                <th>Defuncions</th>
+                                <td>Les defuncions poden portar cert retard en la notificació. A la web, les defuncions
+                                    s’imputen al dia de la defunció i no el dia de la notificació. És per això que poden
+                                    anar augmentant de forma retrospectiva.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <p id="foot"><cite>Font</cite>: <a href="https://dadescovid.cat/documentacio">Salut/Dades Covid</a></p>
+            </article>
+        </main>
+        <footer id="footer">
+            <p>2020 © Jordi Bellés Solà</p>
+            <ul>
+                <li><a href="">Avís Legal</a></li>  
+                <li><a href="">Política de privacitat</a></li>
+            </ul>
+        </footer>
+</body>
+</html>
