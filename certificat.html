@@ -29,15 +29,15 @@
                     <ul>
                         <li class="stacked">
                             <label for="nom" class="required">Nom</label>
-                            <input type="text" id="nom" name="name" minlength="2" maxlength="64" required>
+                            <input type="text" id="nom" name="name" minlength="2" maxlength="64" pattern="[A-Za-z-'-(\-)]+$" required>
                         </li>
                         <li class="stacked">
                             <label for="cognom1" class="required">Primer Cognom</label>
-                            <input type="text" id="cognom1" name="1rCognom" minlength="2" maxlength="128" required>
+                            <input type="text" id="cognom1" name="1rCognom" minlength="2" maxlength="128" pattern="[A-Za-z-'-(\-)]+$" required>
                         </li>
                         <li class="stacked">
                             <label for="cognom2" class="required">Segon Cognom</label>
-                            <input type="text" id="cognom2" name="2nCognom" minlength="2" maxlength="128" required>
+                            <input type="text" id="cognom2" name="2nCognom" minlength="2" maxlength="128" pattern="[A-Za-z-'-(\-)]+$" required>
                         </li>
                         <li class="stacked">
                             <label for="id" class="required">Documentació d'identificació</label>
