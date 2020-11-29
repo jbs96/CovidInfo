@@ -76,14 +76,14 @@
                             <caption>Llistat de les fonts de dades a la web</caption>
                             <thead>
                                 <tr>
-                                    <th>Font</th>
-                                    <th>Descripció</th>
-                                    <th>Dades que aporta</th>
+                                    <th scope="col">Font</th>
+                                    <th scope="col">Descripció</th>
+                                    <th scope="col">Dades que aporta</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>ECAP (Estació Clínica de l’Atenció Primària)</th>
+                                    <th scope="row">ECAP (Estació Clínica de l’Atenció Primària)</th>
                                     <td>És la plataforma de la història
                                         clínica de l’Atenció Primària de
                                         Catalunya. Utilitza els
@@ -94,27 +94,27 @@
                                     <td> Malalties respiratòries agudes-Població de residència</td>
                                 </tr>
                                 <tr>
-                                    <th>Històric de cens hospitalari</th>
+                                    <th scope="row">Històric de cens hospitalari</th>
                                     <td>Ingressos a hospitals de Catalunya, només disponible des del 29/04/2020</td>
                                     <td>Ingressos i ingressats - Ingressos i ingressats a UCI</td>
                                 </tr>
                                 <tr>
-                                    <th>Registre Sanitari Agregat (RSA) de Salut</th>
+                                    <th scope="row">Registre Sanitari Agregat (RSA) de Salut</th>
                                     <td>Registre centralitzat de PCR/TA del sistema púbil de Salut</td>
                                     <td>PCR-Defuncions</td>
                                 </tr>
                                 <tr>
-                                    <th>Orfeu</th>
+                                    <th scope="row">Orfeu</th>
                                     <td>Programa per al registre de PCR/TA, que inicialment es va fer servir per sol·licitar i enregistrar les PCR/TA dels professionals sanitaris i dels cribatges de residenències </td>
                                     <td>PCR</td>
                                 </tr>
                                 <tr>
-                                    <th><a href="https://catsalut.gencat.cat/ca/proveidors-professionals/registres-catalegs/registres/central-poblacio/">Registre central d'assefurats del CatsSalut</a></th>
+                                    <th scope="row"><a href="https://catsalut.gencat.cat/ca/proveidors-professionals/registres-catalegs/registres/central-poblacio/">Registre central d'assefurats del CatsSalut</a></th>
                                     <td>Registre d'assignacions de les persones als seus equips d'atenció primària.</td>
                                     <td>Població - Edat - Gènere - Territori</td>
                                 </tr>
                                 <tr>
-                                    <th>Aplicatiu pilot cens de residències</th>
+                                    <th scope="row">Aplicatiu pilot cens de residències</th>
                                     <td>Aplicatiu on hi ha el censt actualitzat de persones en redisències geriàtriques, de moment en fase pilot només en alguns centres</td>
                                     <td>Població de residència</td>
                                 </tr>
@@ -144,13 +144,13 @@
                     <table id="tbl2">
                         <thead>
                             <tr>
-                                <th>Paràmetre</th>
-                                <th>Motiu</th>
+                                <th scope="col">Paràmetre</th>
+                                <th scope="col">Motiu</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th rowspan="2">PCR/TA</th>
+                                <th scope="row" rowspan="2">PCR/TA</th>
                                 <td>Quan un professional sanitari demana una PCR/TA, aquesta triga en arribar un
                                     temps variable que pot ser hores o dies. La web va incorporant les PCR/TA a
                                     mesura que es van rebent els resultats i aquest s’imputa al dia que es va realitzar
@@ -163,7 +163,7 @@
                                     la prova. Per això el nombre de PCR/TA pot augmentar de forma retrospectiva.</td>
                             </tr>
                             <tr>
-                                <th rowspan="2">Infeccions respiratòries agudes</th>
+                                <th scope="row" rowspan="2">Infeccions respiratòries agudes</th>
                                 <td>A l’hora de fer el diagnòstic a la història clínica, es pot especificar quin és el dia
                                     d’inici de la malaltia, que pot ser anterior al dia de l’assistència. És per això que hi
                                     pot haver increments del nombre de diagnòstics amb posterioritat a la data.</td>
@@ -174,7 +174,7 @@
                                     d’infeccions respiratòries agudes de la web disminuiria.</td>
                             </tr>
                             <tr>
-                                <th>Defuncions</th>
+                                <th scope="row">Defuncions</th>
                                 <td>Les defuncions poden portar cert retard en la notificació. A la web, les defuncions
                                     s’imputen al dia de la defunció i no el dia de la notificació. És per això que poden
                                     anar augmentant de forma retrospectiva.</td>

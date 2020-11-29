@@ -25,7 +25,7 @@ body{
 }
 
 #nav li{
-    display: inline-block;
+    display: inline;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -36,7 +36,7 @@ body{
 }
 
 #nav li:last-child:after{
-    display: none;
+    content: none;
 }
 
 #nav ul li.active{
@@ -44,7 +44,7 @@ body{
 }
 
 #nav a{
-    font-size: initial;
+    font-size: medium;
     text-decoration: none;
     color: #77AFDF;
 }
@@ -71,7 +71,7 @@ main {
 
 #special{
     background-color: gainsboro;
-    display: inline-flex;
+    display: inline;
 }
 
 h1{
@@ -138,11 +138,12 @@ h3 + p{
 
 #footer ul{
     padding: 0;
+    list-style: none;
 }
 
 #footer li{
-    list-style-type: none;
-    display: inline-block;
+    
+    display: inline;
 }
 
 #footer li:last-child{
@@ -150,10 +151,7 @@ h3 + p{
 }
 
 
-/* ARTICLE 
-article{
-    font-size: small;
-} */
+/* ARTICLE */
 
 article section{
     padding: 0;
@@ -243,7 +241,7 @@ caption{
 }
 
 #tbl1 tbody th a {
-    color: inherit;
+    color: black;
 }
 
 #tbl1 tbody tr:nth-child(odd){
@@ -269,10 +267,6 @@ caption{
     text-align: left;
     vertical-align: middle;
     padding: 1% 2% 1.5% 0.5%;
-}
-
-#tbl2 tbody th a {
-    color: inherit;
 }
 
 #tbl2 tbody tr:nth-child(1), #tbl2 tbody tr:nth-child(2){
@@ -369,9 +363,8 @@ input[typbe="checkbox"] {
     margin: 0;
     background: url(../img/home.jpg);
     background-repeat: no-repeat;
-    /*background-size:  100vw;*/
     background-size: cover;
-    background-position: center;
+    
     width: 100vw;
     height: 100vh;
 }
@@ -412,11 +405,11 @@ input[typbe="checkbox"] {
 }
 
 #navIndex li:last-child:after{
-    display: none;
+    content: none;
 }
 
 #navIndex a{
-    font-size: initial;
+    font-size: medium;
     text-decoration: none;
     color: #77AFDF;
 }

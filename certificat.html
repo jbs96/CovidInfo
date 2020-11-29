@@ -2,8 +2,8 @@
 <html lang="ca">
     <head>
         <meta charset="utf-8" />
-        <title>Web Salut/Dades Covid</title>
-        <meta name="description" content="L'objectiu del web és facilitar de forma pública i transparent el seguiment epidemiològic de la pandèmia de la COVID-19" />
+        <title>Certificat autoresponsable</title>
+        <meta name="description" content="Certificat autoresponsable de desplaçament" />
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             </ul>
         </nav>
         <main>
-            <form>
+            <form >
                 <h1>Certificat autoresponsable de desplaçament per la crisi sanitària per la COVID-19</h1>
                 <p id="special">Esl camps assenyalats amb * són obligatoris.</p>
                 <fieldset>
@@ -59,43 +59,42 @@
                         <ul>
                             <li class="stacked">
                                 <label for="data" class="required">Data del desplaçament</label>
-                                <input type="date" id="data" name="dataDesplaçament" placeholder="dd/mm/aaaa" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required>
-                                <span class="validity"></span>
+                                <input type="date" id="data" name="dataDesplaçament" required>
                             </li>
                         </ul>
                         <ul class="checkbox">
                             <li>
-                                Certifico que el meu desplaçament està relacionat amb l'activitat especificada a continuació (marqueu la casella)
+                                Certifico que el meu desplaçament està relacionat amb l'activitat especificada a continuació (marqueu la casella):
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Adquisició d'aliments, productes farmacèutics i de primera necessitat.</label>
+                                <input type="checkbox" id="compra" name="compra" value="compra">
+                                <label for="compra">Adquisició d'aliments, productes farmacèutics i de primera necessitat.</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Assistència a centre, servei o establiment sanitari.</label>
+                                <input type="checkbox" id="metge" name="metge" value="metge">
+                                <label for="metge">Assistència a centre, servei o establiment sanitari.</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Desplaçament al lloc de treball per efectuar la prestació laboral, professional o
+                                <input type="checkbox" id="feina" name="feina" value="feina">
+                                <label for="feina">Desplaçament al lloc de treball per efectuar la prestació laboral, professional o
                                     empresarial.</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Retorn al lloc de residència habitual.</label>
+                                <input type="checkbox" id="retorn" name="retorn" value="retorn">
+                                <label for="retorn">Retorn al lloc de residència habitual.</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Assistència o atenció a persones grans, menors d'edat, dependents, persones
+                                <input type="checkbox" id="asistencia" name="asistencia" value="asistencia">
+                                <label for="asistencia">Assistència o atenció a persones grans, menors d'edat, dependents, persones
                                     amb discapacitat o persones especialment vulnerables.</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Desplaçament a entitat financera o d'assegurança.</label>
+                                <input type="checkbox" id="banc" name="banc" value="banc">
+                                <label for="banc">Desplaçament a entitat financera o d'assegurança.</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Causa de força major o situació de necessitat.</label>
+                                <input type="checkbox" id="major" name="causaMajor" value="causaMajor">
+                                <label for="major">Causa de força major o situació de necessitat.</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="recollida" name="menors" value="recollida">
@@ -108,12 +107,12 @@
                                 </ul>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Sortida passejos majors de 70 anys i dependents.</label>
+                                <input type="checkbox" id="majors" name="gentGran" value="gentGran">
+                                <label for="majors">Sortida passejos majors de 70 anys i dependents.</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="" name="" value="">
-                                <label for="">Sortida activitat física i passeig a partir de 14 anys</label>
+                                <input type="checkbox" id="exercicic" name="exercicic" value="exercicic">
+                                <label for="exercicic">Sortida activitat física i passeig a partir de 14 anys</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -124,7 +123,7 @@
                         <ul>
                             <li class="stacked">
                                 <label for="ogpo" class="required">Codi Postal</label>
-                                <input type="number" id="ogpo" name="codipostalog" minlength="5" maxlength="5" required>
+                                <input type="number" id="ogpo" name="codipostalog" required>
                             </li>
                             <li class="stacked">
                                 <label for="ogprovincia" class="required">Província</label>
@@ -147,7 +146,7 @@
                         <ul>
                             <li class="stacked">
                                 <label for="dtpo" class="required">Codi Postal</label>
-                                <input type="number" id="dtpo" name="codipostaldt" minlength="5" maxlength="5" required>
+                                <input type="number" id="dtpo" name="codipostaldt" required>
                             </li>
                             <li class="stacked">
                                 <label for="dtprovincia" class="required">Província</label>
